@@ -1,0 +1,145 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: add
+  examples: |
+    - what is the sum of [5](num1) and [3](num2)
+    - [10](num1) plus [2](num2)
+    - add [7](num1) and [4](num2)
+    - add [7](num1) + [4](num2)
+    - sum [7](num1) and [4](num2)
+    - what is [5](num1) + [3](num2)
+
+- intent: subtract
+  examples: |
+    - what is [9](num1) minus [4](num2)
+    - subtract [5](num2) from [8](num1)
+    - [10](num1) take away [3](num2)
+    - sub [7](num1) - [4](num2)
+    - sub [7](num1) and [4](num2)
+    - what is [5](num1) - [3](num2)
+
+- intent: multiply
+  examples: |
+    - [2](num1) times [6](num2)
+    - what is the product of [3](num1) and [7](num2)
+    - multiply [4](num1) by [9](num2)
+    - multiply [7](num1) * [4](num2)
+    - multiply [7](num1) and [4](num2)
+    - what is [5](num1) * [3](num2)
+
+- intent: divide
+  examples: |
+    - what is [12](num1) divided by [4](num2)
+    - divide [15](num1) by [3](num2)
+    - [20](num1) over [5](num2)
+    - divide [7](num1) / [4](num2)
+    - sivide [7](num1) and [4](num2)
+    - what is [5](num1) / [3](num2)
+
+- intent: inform
+  examples: |
+    - it's 7
+    - the answer is 12
+    - the result is 9
+    
+- intent: ask_math
+  examples: |
+    - can you do some math for me?
+    - could you solve this for me?
+    - I need help with some math
+
+entity_types:
+  - type: num1
+    role: number
+  - type: num2
+    role: number
